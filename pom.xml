@@ -6,7 +6,7 @@
 
     <groupId>org.hwj</groupId>
     <artifactId>google-translater</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
 
     <dependencies>
