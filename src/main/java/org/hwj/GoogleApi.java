@@ -110,7 +110,7 @@ public class GoogleApi {
             e.printStackTrace();
         }
 
-        StringBuffer buffer = new StringBuffer("https://translate.google.cn/translate_a/single?client=t");
+        StringBuffer buffer = new StringBuffer("https://translate.google.cn/translate_a/single?client=webapp");
 
         if (StringUtils.isBlank(from)) {
             from = "auto";
