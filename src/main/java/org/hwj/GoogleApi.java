@@ -125,6 +125,9 @@ public class GoogleApi {
 
         try {
             String result = browser.executeGet();
+            if(StringUtils.isBlank(result)){
+                return null;
+            }
             JSONArray array = (JSONArray) JSONArray.parse(result);
             JSONArray rArray = array.getJSONArray(0);
             StringBuffer rBuffer = new StringBuffer();
