@@ -6,8 +6,8 @@ public class Test {
         // 普通方式初始化
         GoogleApi googleApi = new GoogleApi();
         // 通过代理
-//        GoogleApi googleApi = new GoogleApi("122.224.227.202", 3128);
-        String result = googleApi.translate("刚刚，64人新当选中科院院士！", "zh-CN", "id");
+//        GoogleApi googleApi = new GoogleApi("114.55.55.186", 9038);
+        String result = googleApi.translate("我是中国人", "zh-CN", "en");
         System.out.println(result);
     }
 }

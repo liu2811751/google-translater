@@ -39,7 +39,7 @@ public class HttpClientUtil {
             if (response.getStatusLine().getStatusCode() == 200)
                 resultString = EntityUtils.toString(response.getEntity(), "UTF-8");
 
-            if(StringUtils.isNotBlank(resultString) && resultString.startsWith("<!DOCTYPE html>")){
+            if(url.contains("translate_a/single") && StringUtils.isNotBlank(resultString) && resultString.startsWith("<!DOCTYPE html>")){
                 resultString = null;
             }
         } catch (Exception e) {
@@ -78,7 +78,7 @@ public class HttpClientUtil {
             if (response.getStatusLine().getStatusCode() == 200)
                 resultString = EntityUtils.toString(response.getEntity(), "UTF-8");
 
-            if(StringUtils.isNotBlank(resultString) && resultString.startsWith("<!DOCTYPE html>")){
+            if(url.contains("translate_a/single") && StringUtils.isNotBlank(resultString) && resultString.startsWith("<!DOCTYPE html>")){
                 resultString = null;
             }
         } catch (Exception e) {
